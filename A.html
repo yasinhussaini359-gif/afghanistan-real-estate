@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#075e54">
+
+<title>سیستم های آنلاین رهنمای معاملات افغانستان</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:#f3f5f7;
+    font-family:Tahoma,Arial,sans-serif;
+    color:#222;
+}
+
+/* سرصفحه */
+
+header{
+    background:#075e54;
+    color:white;
+    text-align:center;
+    padding:30px 15px;
+}
+
+.logo{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+header h1{
+    margin:0;
+    font-size:22px;
+    line-height:1.7;
+}
+
+header p{
+    margin:8px 0 0;
+    font-size:14px;
+}
+
+/* محتوا */
+
+main{
+    max-width:600px;
+    margin:auto;
+    padding:25px 15px;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.title h2{
+    margin:0;
+    font-size:20px;
+}
+
+.title p{
+    color:#666;
+    font-size:14px;
+}
+
+/* دکمه ها */
+
+.site-button{
+    width:100%;
+    background:white;
+    border:1px solid #e5e5e5;
+    border-radius:16px;
+    padding:22px 15px;
+    margin-bottom:18px;
+    box-shadow:0 3px 12px rgba(0,0,0,.10);
+    text-align:center;
+    cursor:pointer;
+}
+
+.site-button:active{
+    transform:scale(.97);
+}
+
+.icon{
+    width:65px;
+    height:65px;
+    margin:auto;
+    margin-bottom:12px;
+    border-radius:50%;
+    background:#e9f5f2;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+}
+
+.name{
+    font-size:18px;
+    font-weight:bold;
+    line-height:1.7;
+}
+
+.description{
+    color:#777;
+    font-size:13px;
+    margin-top:6px;
+    line-height:1.6;
+}
+
+/* پیام */
+
+#message{
+    display:none;
+    text-align:center;
+    background:#fff3cd;
+    color:#664d03;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+    font-size:14px;
+}
+
+/* فوتر */
+
+footer{
+    text-align:center;
+    color:#777;
+    font-size:12px;
+    line-height:1.8;
+    padding:20px 15px 30px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">🏠</div>
+
+    <h1>
+        سیستم های آنلاین رهنمای معاملات افغانستان
+    </h1>
+
+    <p>
+        دسترسی آسان به سیستم‌های آنلاین
+    </p>
+
+</header>
+
+
+<main>
+
+    <div class="title">
+
+        <h2>
+            انتخاب سیستم
+        </h2>
+
+        <p>
+            برای ورود یکی از گزینه‌های زیر را انتخاب کنید
+        </p>
+
+    </div>
+
+
+    <!-- سیستم رهنمای معاملات -->
+
+    <div
+        class="site-button"
+        onclick="openSite('http://103.132.98.92')"
+    >
+
+        <div class="icon">
+            🏠
+        </div>
+
+        <div class="name">
+            سیستم آنلاین رهنمای معاملات
+        </div>
+
+        <div class="description">
+            ورود به سیستم آنلاین رهنمای معاملات افغانستان
+        </div>
+
+    </div>
+
+
+    <!-- پلان شهری کابل -->
+
+    <div
+        class="site-button"
+        onclick="openSite('https://kmplan.km.gov.af')"
+    >
+
+        <div class="icon">
+            🗺️
+        </div>
+
+        <div class="name">
+            پلان شهری کابل
+        </div>
+
+        <div class="description">
+            ورود به پلان شهری کابل
+        </div>
+
+    </div>
+
+
+    <div id="message">
+        در حال باز کردن سایت...
+    </div>
+
+
+</main>
+
+
+<footer>
+
+    © 2026 سیستم های آنلاین رهنمای معاملات افغانستان
+
+    <br>
+
+    تهیه کننده: محمد یاسین حسینی
+
+</footer>
+
+
+<script>
+
+function openSite(url){
+
+    document.getElementById("message").style.display = "block";
+
+    document.getElementById("message").innerText =
+        "در حال باز کردن سایت...";
+
+    window.location.href = url;
+
+}
+
+</script>
+
+
+</body>
+
+</html>
